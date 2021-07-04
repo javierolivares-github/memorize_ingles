@@ -59,10 +59,10 @@ body {
       top: 0;
       left: 0; }
     .contenedorTarjetas .tarjeta .no-seleccionable {
+      -moz-user-select: none;
       -webkit-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none; }
+      -ms-user-select: none;
+      user-select: none; }
     .contenedorTarjetas .tarjeta .cara--frontal {
       background-color: #516dff;
       color: #fff; }
