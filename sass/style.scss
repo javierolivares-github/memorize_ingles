@@ -54,24 +54,50 @@ body {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+      backface-visibility: hidden;
     }
     
     .cara--frontal {
       grid-area: 1 / 1;
       background-color: #516dff;
       color: #fff;
+      transform: rotateY(180deg);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .cara--verbo {
       grid-area: 1 / 1;
-      background-color: #e878a1;
+      background-color: #e74c3c;
       color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
     .cara--sustantivo {
       grid-area: 1 / 1;
-      background-color: #1aa4de;
+      background-color: #3498db;
       color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .cara--adjetivo {
+      grid-area: 1 / 1;
+      background-color: #27ae60;
+      color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .cara--adverbio {
+      grid-area: 1 / 1;
+      background-color: #f1c40f;
+      color: #333;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .cara--cortesia {
+      grid-area: 1 / 1;
+      background-color: #e67e22;
+      color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   
   }

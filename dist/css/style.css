@@ -76,25 +76,59 @@ body {
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
-      user-select: none; }
+      user-select: none;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden; }
     .contenedorDeTarjetas .tarjeta .cara--frontal {
       -ms-grid-row: 1;
       -ms-grid-column: 1;
       grid-area: 1 / 1;
       background-color: #516dff;
-      color: #fff; }
+      color: #fff;
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .contenedorDeTarjetas .tarjeta .cara--verbo {
       -ms-grid-row: 1;
       -ms-grid-column: 1;
       grid-area: 1 / 1;
-      background-color: #e878a1;
-      color: #fff; }
+      background-color: #e74c3c;
+      color: #fff;
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .contenedorDeTarjetas .tarjeta .cara--sustantivo {
       -ms-grid-row: 1;
       -ms-grid-column: 1;
       grid-area: 1 / 1;
-      background-color: #1aa4de;
-      color: #fff; }
+      background-color: #3498db;
+      color: #fff;
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .contenedorDeTarjetas .tarjeta .cara--adjetivo {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: 1 / 1;
+      background-color: #27ae60;
+      color: #fff;
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .contenedorDeTarjetas .tarjeta .cara--adverbio {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: 1 / 1;
+      background-color: #f1c40f;
+      color: #333;
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .contenedorDeTarjetas .tarjeta .cara--cortesia {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: 1 / 1;
+      background-color: #e67e22;
+      color: #fff;
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .contenedorDeTarjetas .tarjeta:active {
     -webkit-transform: scale(0.94);
             transform: scale(0.94);
