@@ -63,8 +63,7 @@ body {
           -ms-flex-pack: center;
               justify-content: center;
       -ms-flex-line-pack: center;
-          align-content: center; }
-    .contenedorDeTarjetas .tarjeta .contenedorDeCaras .no-seleccionable {
+          align-content: center;
       -webkit-touch-callout: none;
       -webkit-user-select: none;
       -moz-user-select: none;
