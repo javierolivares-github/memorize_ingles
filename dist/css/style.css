@@ -40,10 +40,6 @@ body {
     -webkit-transform: scale(1);
             transform: scale(1); }
     .contenedorTarjetas .tarjeta .cara {
-      -webkit-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
       width: 100px;
       height: 100px;
       border-radius: 15px;
@@ -62,6 +58,11 @@ body {
       position: absolute;
       top: 0;
       left: 0; }
+    .contenedorTarjetas .tarjeta .no-seleccionable {
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; }
     .contenedorTarjetas .tarjeta .cara--frontal {
       background-color: #516dff;
       color: #fff; }
