@@ -76,8 +76,8 @@ body {
   .contenedorTarjetas .tarjeta:active {
     -webkit-transform: scale(0.94);
             transform: scale(0.94);
-    -webkit-transition: -webkit-transform .2s;
-    transition: -webkit-transform .2s;
-    transition: transform .2s;
-    transition: transform .2s, -webkit-transform .2s; }
+    -webkit-transition: -webkit-transform .1s;
+    transition: -webkit-transform .1s;
+    transition: transform .1s;
+    transition: transform .1s, -webkit-transform .1s; }
 /*# sourceMappingURL=style.css.map */
