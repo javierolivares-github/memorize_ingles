@@ -33,6 +33,7 @@ body {
     transform: scale(1);
 
     .cara {
+      user-select: none;
       width: 100px;
       height: 100px;
       border-radius: 15px;
