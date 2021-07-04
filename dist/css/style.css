@@ -27,7 +27,7 @@ body {
   height: 100vh;
   overflow: hidden; }
 
-.contenedorTarjetas {
+.contenedorDeTarjetas {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100px 100px 100px;
@@ -35,45 +35,60 @@ body {
   -webkit-column-gap: 18px;
           column-gap: 18px;
   row-gap: 18px; }
-  .contenedorTarjetas .tarjeta {
-    position: relative;
+  .contenedorDeTarjetas .tarjeta .contenedorDeCaras {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-transform: scale(1);
             transform: scale(1); }
-    .contenedorTarjetas .tarjeta .cara {
+    .contenedorDeTarjetas .tarjeta .contenedorDeCaras .cara {
       width: 100px;
       height: 100px;
       border-radius: 15px;
+      font-size: 16px;
+      padding: 5px;
+      text-align: center;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      text-align: center;
-      font-size: 16px;
-      padding: 5px;
-      position: absolute;
-      top: 0;
-      left: 0; }
-    .contenedorTarjetas .tarjeta .no-seleccionable {
+      -ms-flex-line-pack: center;
+          align-content: center; }
+    .contenedorDeTarjetas .tarjeta .contenedorDeCaras .no-seleccionable {
       -webkit-touch-callout: none;
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none; }
-    .contenedorTarjetas .tarjeta .cara--frontal {
+    .contenedorDeTarjetas .tarjeta .contenedorDeCaras .cara--frontal {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: 1 / 1;
       background-color: #516dff;
       color: #fff; }
-    .contenedorTarjetas .tarjeta .cara--verbo {
+    .contenedorDeTarjetas .tarjeta .contenedorDeCaras .cara--verbo {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: 1 / 1;
       background-color: #e878a1;
       color: #fff; }
-    .contenedorTarjetas .tarjeta .cara--sustantivo {
+    .contenedorDeTarjetas .tarjeta .contenedorDeCaras .cara--sustantivo {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: 1 / 1;
       background-color: #1aa4de;
       color: #fff; }
-  .contenedorTarjetas .tarjeta:active {
+  .contenedorDeTarjetas .tarjeta .contenedorDeCaras:active {
     -webkit-transform: scale(0.94);
             transform: scale(0.94);
     -webkit-transition: -webkit-transform .1s;

@@ -22,61 +22,68 @@ body {
 }
 
 
-.contenedorTarjetas {
+.contenedorDeTarjetas {
   display: grid;
   grid-template-columns: 100px 100px 100px;
   column-gap: 18px;
   row-gap: 18px;
 
   .tarjeta {
-    position: relative;
-    transform: scale(1);
+    
 
-    .cara {
-      width: 100px;
-      height: 100px;
-      border-radius: 15px;
-      display: flex;
+    .contenedorDeCaras {
+      display: grid;
+      grid-template-columns: 1fr;
       justify-content: center;
-      align-items: center;
-      text-align: center;
-      font-size: 16px;
-      padding: 5px;
-      position: absolute;
-      top: 0;
-      left: 0;
+      transform: scale(1);
+
+      .cara {
+        width: 100px;
+        height: 100px;
+        border-radius: 15px;
+        font-size: 16px;
+        padding: 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+      }
+  
+      .no-seleccionable {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      .cara--frontal {
+        grid-area: 1 / 1;
+        background-color: #516dff;
+        color: #fff;
+      }
+  
+      .cara--verbo {
+        grid-area: 1 / 1;
+        background-color: #e878a1;
+        color: #fff;
+      }
+      
+      .cara--sustantivo {
+        grid-area: 1 / 1;
+        background-color: #1aa4de;
+        color: #fff;
+      }
     }
 
-    .no-seleccionable {
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-    
-    .cara--frontal {
-      background-color: #516dff;
-      color: #fff;
-      // box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    .cara--verbo {
-      background-color: #e878a1;
-      color: #fff;
-    }
-    
-    .cara--sustantivo {
-      background-color: #1aa4de;
-      color: #fff;
+    .contenedorDeCaras:active {
+      transform: scale(.94);
+      transition: transform .1s;
     }
   }
 
-  .tarjeta:active {
-    transform: scale(.94);
-    transition: transform .1s;
-  }
 }
 
 
