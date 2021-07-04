@@ -27,60 +27,63 @@ body {
   grid-template-columns: 100px 100px 100px;
   column-gap: 18px;
   row-gap: 18px;
+  perspective: 1000px;
 
   .tarjeta {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
     
-
-    .contenedorDeCaras {
-      display: grid;
-      grid-template-columns: 1fr;
+    .cara {
+      width: 100px;
+      height: 100px;
+      border-radius: 15px;
+      font-size: 16px;
+      padding: 5px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
-      transform: scale(1);
+      align-content: center;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    .cara--frontal {
+      grid-area: 1 / 1;
+      background-color: #516dff;
+      color: #fff;
+    }
 
-      .cara {
-        width: 100px;
-        height: 100px;
-        border-radius: 15px;
-        font-size: 16px;
-        padding: 5px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-      
-      .cara--frontal {
-        grid-area: 1 / 1;
-        background-color: #516dff;
-        color: #fff;
-      }
+    .cara--verbo {
+      grid-area: 1 / 1;
+      background-color: #e878a1;
+      color: #fff;
+    }
+    
+    .cara--sustantivo {
+      grid-area: 1 / 1;
+      background-color: #1aa4de;
+      color: #fff;
+    }
   
-      .cara--verbo {
-        grid-area: 1 / 1;
-        background-color: #e878a1;
-        color: #fff;
-      }
-      
-      .cara--sustantivo {
-        grid-area: 1 / 1;
-        background-color: #1aa4de;
-        color: #fff;
-      }
-    }
-
-    .contenedorDeCaras:active {
-      transform: scale(.94);
-      transition: transform .1s;
-    }
+  }
+  
+  .tarjeta:active {
+    transform: scale(.94);
+    transition: transform .1s;
   }
 
+  .tarjeta.voltear {
+    transform: rotateY(180deg);
+  }
 }
 
 
