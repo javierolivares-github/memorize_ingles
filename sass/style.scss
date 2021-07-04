@@ -42,13 +42,15 @@ body {
       text-align: center;
       font-size: 16px;
       padding: 5px;
-      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       position: absolute;
+      top: 0;
+      left: 0;
     }
-
+    
     .cara--frontal {
       background-color: #516dff;
       color: #fff;
+      // box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .cara--verbo {
